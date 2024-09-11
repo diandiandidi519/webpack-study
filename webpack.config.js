@@ -3,6 +3,8 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 const isProduction = process.env.NODE_ENV == "production";
 
+const TestPlugin = require("./plugin");
+
 const config = {
   entry: "./src/index.js",
   // devtool: "eval-source-map",
@@ -16,6 +18,7 @@ const config = {
     host: "localhost",
   },
   plugins: [
+    new TestPlugin(),
     // new HtmlWebpackPlugin({
     //   template: "index.html",
     // }),
