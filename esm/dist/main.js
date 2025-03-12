@@ -8,7 +8,7 @@
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__),
-/* harmony export */   "text": () => (/* binding */ text)
+/* harmony export */   text: () => (/* binding */ text)
 /* harmony export */ });
 const sum = (...args) => args.reduce((prev, current) => prev + current);
 
@@ -75,15 +75,11 @@ const text = "text";
 /******/ 	
 /************************************************************************/
 var __webpack_exports__ = {};
-// This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
-(() => {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _sum__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
 
 
-console.log((0,_sum__WEBPACK_IMPORTED_MODULE_0__["default"])(1, 2));
-
-})();
+console.log((0,_sum__WEBPACK_IMPORTED_MODULE_0__["default"])(1, 2), _sum__WEBPACK_IMPORTED_MODULE_0__.text);
 
 /******/ })()
 ;
