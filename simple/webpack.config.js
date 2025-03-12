@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 const isProduction = process.env.NODE_ENV == "production";
 
-const TestPlugin = require("./plugin");
+const TestPlugin = require("../plugin/plugin");
 
 const config = {
   entry: "./src/index.js",
